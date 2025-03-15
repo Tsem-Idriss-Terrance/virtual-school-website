@@ -12,5 +12,15 @@
     "getStarted": "Commencer",
     "signIn": "Se connecter"
 
+  },
+  "hero":{
+    "allInOneSolution": "Solution tout-en-un pour la gestion facile de votre",
+    "training": "formation",
+    "isASolutionDedicatedTo": "est une solution numérique dédiée aux",
+    "trainingCenter": "centres de formation",
+    "students": "étudiants",
+    "and": "et",
+    "companies": "entreprises",
+    "freeTrial": "Essai gratuit"
   }
 }

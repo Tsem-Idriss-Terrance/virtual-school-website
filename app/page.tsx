@@ -11,7 +11,6 @@ const t = useTranslations("HomePage")
 
   return (
     <div className="mt-24 md:mt-36">
-      <Button>{t("test")}</Button>
       <Hero/>
     </div>
 

@@ -15,6 +15,7 @@ import {
 import { useRouter } from "next/navigation";
 import { setCookie, getCookie } from "cookies-next";
 import { Languages } from "lucide-react";
+import ReactCountryFlag from "react-country-flag";
 
 export function LangSwitcher() {
   // const langue: string | undefined = getCookie("language") as string | undefined;
@@ -42,8 +43,8 @@ export function LangSwitcher() {
           value={langue}
           onValueChange={handleLanguageChange}
         >
-          <DropdownMenuRadioItem value="fr">Francais</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="en">English</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="fr">Francais <ReactCountryFlag countryCode="FR" /></DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="en">English <ReactCountryFlag countryCode="US" /></DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
