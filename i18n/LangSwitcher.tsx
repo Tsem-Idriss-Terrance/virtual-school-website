@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import * as React from "react"
+import * as React from "react";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,34 +11,41 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import { useRouter } from "next/navigation";
-import { setCookie, getCookie } from "cookies-next"; 
+import { setCookie, getCookie } from "cookies-next";
+import { Languages } from "lucide-react";
 
-
-export  function LangSwitcher() {
-    // const langue: string | undefined = getCookie("language") as string | undefined;
-    const [langue, setLangue] = React.useState<string | undefined>(getCookie("language") as string | undefined)
+export function LangSwitcher() {
+  // const langue: string | undefined = getCookie("language") as string | undefined;
+  const [langue, setLangue] = React.useState<string | undefined>(
+    getCookie("language") as string | undefined
+  );
   const router = useRouter();
 
   const handleLanguageChange = (lang: string) => {
-    setLangue(lang)
+    setLangue(lang);
     setCookie("language", lang);
-    
-    router.refresh();  
+
+    router.refresh();
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">Langues</Button>
+        <Button variant="secondary">
+          <Languages/>
+        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuRadioGroup value={langue} onValueChange={handleLanguageChange}>
+        <DropdownMenuRadioGroup
+          value={langue}
+          onValueChange={handleLanguageChange}
+        >
           <DropdownMenuRadioItem value="fr">Francais</DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="en">English</DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }
