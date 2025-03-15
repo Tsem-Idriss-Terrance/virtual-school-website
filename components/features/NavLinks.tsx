@@ -1,25 +1,27 @@
 "use client"
 
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function NavLinks() {
+  const t = useTranslations("header")
   const navLinks = [
     {
       id: 0,
-      name: "Feature",
+      name: t("feature"),
       href: "#feature",
     },
     {
       id: 1,
-      name: "Ressourses",
+      name: t("resources"),
       href: "#ressources",
     },
     {
       id: 2,
-      name: "Pricing",
+      name: t("rate"),
       href: "#pricing",
     },
     {

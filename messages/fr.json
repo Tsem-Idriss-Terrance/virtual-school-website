@@ -1,5 +1,16 @@
 {
-    "HomePage": {
-      "title": "Bonjour le monde!"
-    }
+  "HomePage": {
+    "title": "Hello world!",
+    "test":"essai"
+
+  },
+  "header":{
+    "feature": "Fonctionnalités",
+    "resources": "Ressources",
+    "rate": "Tarifs",
+  
+    "getStarted": "Commencer",
+    "signIn": "Se connecter"
+
   }
+}

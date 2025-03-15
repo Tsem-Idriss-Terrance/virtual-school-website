@@ -1,5 +1,14 @@
 {
     "HomePage": {
-      "title": "Hello world!"
+      "title": "Hello world!",
+      "test":"try"
+    },
+    "header":{
+      "feature": "Feature",
+      "resources": "Resources",
+      "rate": "Rate",
+
+      "getStarted": "Get started",
+      "signIn":"Sign In"
     }
   }

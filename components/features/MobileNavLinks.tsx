@@ -1,43 +1,45 @@
 "use client"
 
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function MobileNavLinks() {
-  const navLinks = [
-    {
-      id: 0,
-      name: "Feature",
-      href: "#feature",
-    },
-    {
-      id: 1,
-      name: "Ressourses",
-      href: "#ressources",
-    },
-    {
-      id: 2,
-      name: "Pricing",
-      href: "#pricing",
-    },
-    {
-      id: 3,
-      name: "FAQs",
-      href: "#faq",
-    },
-    {
-      id: 4,
-      name: "Contact",
-      href: "#contact",
-    },
-  ];
+    const t = useTranslations("header")
+    const navLinks = [
+      {
+        id: 0,
+        name: t("feature"),
+        href: "#feature",
+      },
+      {
+        id: 1,
+        name: t("resources"),
+        href: "#ressources",
+      },
+      {
+        id: 2,
+        name: t("rate"),
+        href: "#pricing",
+      },
+      {
+        id: 3,
+        name: "FAQs",
+        href: "#faq",
+      },
+      {
+        id: 4,
+        name: "Contact",
+        href: "#contact",
+      },
+    ];
 
   const location = usePathname()
   return (
-    <nav>
-      <ul className="flex flex-col  gap-2">
+    <nav className="mb-2">
+      <ul className="flex flex-col  gap-2 ">
         {navLinks.map((navLink) => {
           return (
             <li key={navLink.id}>
