@@ -10,7 +10,7 @@ export default function Home() {
 const t = useTranslations("HomePage")
 
   return (
-    <div className="mt-24 md:mt-36">
+    <div className="mt-24 md:mt-36 min-h-screen">
       <Hero/>
     </div>
 

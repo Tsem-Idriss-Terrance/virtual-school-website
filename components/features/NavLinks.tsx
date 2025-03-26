@@ -16,21 +16,16 @@ export default function NavLinks() {
     },
     {
       id: 1,
-      name: t("resources"),
-      href: "#ressources",
-    },
-    {
-      id: 2,
       name: t("rate"),
       href: "#pricing",
     },
     {
-      id: 3,
+      id: 2,
       name: "FAQs",
       href: "#faq",
     },
     {
-      id: 4,
+      id: 3,
       name: "Contact",
       href: "#contact",
     },

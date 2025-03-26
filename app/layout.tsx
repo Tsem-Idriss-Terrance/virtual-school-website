@@ -32,9 +32,9 @@ export default async function RootLayout({
 
   const locale = await getLocale();
   return (
-    <html lang={locale}>
+    <html lang={locale} >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <NextIntlClientProvider>
           <ThemeProvider
@@ -44,7 +44,7 @@ export default async function RootLayout({
                       disableTransitionOnChange
           >
           <Header/>
-        {children}
+          <main>{children}</main>
         <Footer/>
         </ThemeProvider>
         </NextIntlClientProvider>

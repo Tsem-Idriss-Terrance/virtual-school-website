@@ -7,6 +7,8 @@
       "feature": "Feature",
       "resources": "Resources",
       "rate": "Rate",
+      "FAQs": "FAQs",
+      "contact": "Contact",
 
       "getStarted": "Get started",
       "signIn":"Sign In"
@@ -15,7 +17,7 @@
       "allInOneSolution": "All-in-one solution for easy management of your",
       "training": "training",
       "isASolutionDedicatedTo": "is a digital solution dedicated to",
-      "trainingCenter": "training centers",
+      "trainingCenter": " training centers",
       "students": "students",
       "and": "and",
       "companies": "companies",

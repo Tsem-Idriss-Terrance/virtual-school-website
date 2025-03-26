@@ -47,6 +47,8 @@ export function LangSwitcher() {
           <DropdownMenuRadioItem value="en">English <ReactCountryFlag countryCode="US" /></DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
+      <span className='sr-only'>lang changer</span>
+
     </DropdownMenu>
   );
 }

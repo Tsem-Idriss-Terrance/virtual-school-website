@@ -20,7 +20,7 @@ import { useTranslations } from "next-intl";
 export default function MobileMenu() {
     const t = useTranslations("header")
   return (
-    <div className=" md:hidden ml-1">
+    <div className=" md:hidden ml-1 ">
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline">

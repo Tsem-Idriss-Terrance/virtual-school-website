@@ -7,34 +7,30 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function MobileNavLinks() {
-    const t = useTranslations("header")
+      const t = useTranslations("header")
+    
     const navLinks = [
-      {
-        id: 0,
-        name: t("feature"),
-        href: "#feature",
-      },
-      {
-        id: 1,
-        name: t("resources"),
-        href: "#ressources",
-      },
-      {
-        id: 2,
-        name: t("rate"),
-        href: "#pricing",
-      },
-      {
-        id: 3,
-        name: "FAQs",
-        href: "#faq",
-      },
-      {
-        id: 4,
-        name: "Contact",
-        href: "#contact",
-      },
-    ];
+        {
+          id: 0,
+          name: t("feature"),
+          href: "#feature",
+        },
+        {
+          id: 1,
+          name: t("rate"),
+          href: "#pricing",
+        },
+        {
+          id: 2,
+          name: "FAQs",
+          href: "#faq",
+        },
+        {
+          id: 3,
+          name: "Contact",
+          href: "#contact",
+        },
+      ];
 
   const location = usePathname()
   return (

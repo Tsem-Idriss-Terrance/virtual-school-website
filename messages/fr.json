@@ -8,6 +8,8 @@
     "feature": "Fonctionnalités",
     "resources": "Ressources",
     "rate": "Tarifs",
+    "FAQs": "FAQs",
+    "contact": "Contact",
   
     "getStarted": "Commencer",
     "signIn": "Se connecter"
@@ -17,7 +19,7 @@
     "allInOneSolution": "Solution tout-en-un pour la gestion facile de votre",
     "training": "formation",
     "isASolutionDedicatedTo": "est une solution numérique dédiée aux",
-    "trainingCenter": "centres de formation",
+    "trainingCenter": " centres de formation",
     "students": "étudiants",
     "and": "et",
     "companies": "entreprises",

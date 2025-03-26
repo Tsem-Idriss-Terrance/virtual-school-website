@@ -7,14 +7,14 @@ import { useTranslations } from "next-intl";
 export default function Hero() {
   const t = useTranslations("hero");
   return (
-    <section className=" w-screen  max-[500px]:flex-wrap flex items-center justify-center md:gap-4 gap-2  px-4">
+    <section className=" w-full  max-[500px]:flex-wrap flex items-center justify-center md:gap-4 gap-2  px-4">
       {/* cote gauche avec les lettres */}
 
       <div className="left md:w-lg w-fit flex flex-col max-[500px]:text-center">
         <h1 className="croll-m-20 md:leading-15 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {/* Solution tout-en-un pour gérer facilement vos{" "} */}
           {t("allInOneSolution")}
-          <span className="bg-green-400">
+          <span className="bg-green-600">
             {/* formations */} {" "}
             {t("training")}
           </span>
@@ -36,7 +36,7 @@ export default function Hero() {
             {/* étudiants */}
             {t("students")}
           </span>{" "}
-          et
+          {t("and")}
           {/* {t("and")} */}{" "}
           <span className="text-blue-600">
             {/* entreprises */}
@@ -53,6 +53,7 @@ export default function Hero() {
               <ChevronRight />
             </span>
           </Button>
+          
         </p>
       </div>
 
