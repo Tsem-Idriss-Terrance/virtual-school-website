@@ -1,12 +1,13 @@
 'use client'
 
+import Contact from "@/components/layout/Contact";
+import Faq from "@/components/layout/Faq";
 import Features from "@/components/layout/Features";
 import Hero from "@/components/layout/Hero";
+import Pricing from "@/components/layout/Pricing";
 import TrustesByCompanies from "@/components/layout/TrustedByCompanies";
-import { Button } from "@/components/ui/button";
-import { LangSwitcher } from "@/i18n/LangSwitcher";
+
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 export default function Home() {
 const t = useTranslations("HomePage")
@@ -16,6 +17,9 @@ const t = useTranslations("HomePage")
       <Hero/>
       <TrustesByCompanies/>
       <Features/>
+      <Pricing/>
+      <Faq/>
+      <Contact/>
     </div>
 
   );

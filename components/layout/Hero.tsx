@@ -15,7 +15,7 @@ export default function Hero() {
     <section className=" w-full  max-[500px]:flex-wrap flex items-center justify-center md:gap-4 gap-2  px-4">
       {/* cote gauche avec les lettres */}
 
-      <div className="left md:w-lg w-fit flex flex-col max-[500px]:text-center">
+      <section className="left md:w-lg w-fit flex flex-col max-[500px]:text-center">
         <h1 className="croll-m-20 md:leading-15 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {/* Solution tout-en-un pour gérer facilement vos{" "} */}
           {t("allInOneSolution")}
@@ -65,17 +65,17 @@ export default function Hero() {
           </Button>
         </p>
         <TrustByStudents/>
-      </div>
+      </section>
 
       {/* cote droit ou il ya la photo */}
-      <div className="right md:w-[400px] w-fit">
+      <section className="right md:w-[400px] w-fit">
         <Image
           width={400}
           height={300}
           src={"/testImageToemove1.svg"}
           alt="mettre une image qui regarde le bouton essai gratuit et qui fait reference a l'etude ou formation en ligne"
         />
-      </div>
+      </section>
     </section>
   );
 }

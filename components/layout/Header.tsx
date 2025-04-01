@@ -13,7 +13,7 @@ import Logo from "../features/Logo";
 
 export default function Header() {
   return (
-    <header className="bg-blue-700/15 z-10  bg-clip-padding backdrop-filter fixed top-0 left-0 w-screen flex py-2 justify-between items-center md:px-8 px-4 lg:px-32 border-b-accent border backdrop-blur-sm">
+    <header className="bg-blue-700/15 z-10  bg-clip-padding backdrop-filter fixed top-0 left-0 right-0 w-full flex py-2 justify-between items-center md:px-8 px-4 lg:px-32 border-b-accent border backdrop-blur-sm">
       <Logo/>
       <Menu />
       <MobileMenu />

@@ -13,7 +13,7 @@ interface Feature{
 
 export default function Feature({children, className}: Feature) {
   return (
-    <section className={cn(className)} >{children}</section>
+    <section className={cn("my-4 md:my-9",className)} >{children}</section>
   )
 }
 

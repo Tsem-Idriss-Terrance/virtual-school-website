@@ -32,7 +32,7 @@ export default function FeatureCarousel({images}: FeatureCarouselProps) {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-md"
+      className="w-[300px] sm:w-fit max-w-md"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -58,7 +58,7 @@ export default function FeatureCarousel({images}: FeatureCarouselProps) {
                     <div className="p-1">
                       <Card>
                         <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
-                            <Image height={300} width={300} alt="Image de" src={image} className="object-cover w-full"/>
+                            <Image height={200} width={200} alt="Image de" src={image} className="object-cover w-full"/>
                           <span className="text-4xl font-semibold">{index + 1}</span>
                         </CardContent>
                       </Card>
@@ -69,8 +69,8 @@ export default function FeatureCarousel({images}: FeatureCarouselProps) {
         }
 
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="max-[320px]:hidden"/>
+      <CarouselNext className="max-[320px]:hidden"/>
     </Carousel>
   )
 }

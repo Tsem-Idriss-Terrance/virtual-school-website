@@ -51,7 +51,7 @@ export default function MarqueeCompanies({
     },
   ];
 
-  const ELEMENTS = [...companiesLogo, ...companiesLogo]
+  const ELEMENTS = [...companiesLogo, ...companiesLogo, ...companiesLogo]
   const marquee = useRef<HTMLDivElement>(null)
   const timeline = useRef<GSAPTimeline>(null)
   let timelineTweenScale = useRef<GSAPTween>(null)
@@ -101,7 +101,7 @@ const list = useMemo(
           const isLast = index === ELEMENTS.length - 1
             return (
               <div key={index} className={twJoin(" relative flex shrink-0 items-center justify-center", isLast && "mr-10")}>
-              <Image width={200} height={200} alt="companies logo " src={logo.src} className="object-cover w-32 h-32" />
+              <Image width={100} height={100} alt="companies logo " src={logo.src} className="object-cover w-16 h-16" />
               </div>
             );
           })}
