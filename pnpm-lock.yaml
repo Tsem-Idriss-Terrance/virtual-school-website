@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@gdev-org/gdev_form_validator':
+        specifier: ^1.0.2
+        version: 1.0.2
       '@gsap/react':
         specifier: ^2.1.2
         version: 2.1.2(gsap@3.12.7)(react@19.0.0)
@@ -176,6 +179,9 @@ packages:
 
   '@formatjs/intl-localematcher@0.6.0':
     resolution: {integrity: sha512-4rB4g+3hESy1bHSBG3tDFaMY2CH67iT7yne1e+0CLTsGLDcmoEWWpJjjpWVaYgYfYuohIRuo0E+N536gd2ZHZA==}
+
+  '@gdev-org/gdev_form_validator@1.0.2':
+    resolution: {integrity: sha512-zYk1brq5+/FctVFm2jj6BapMstfxpilAAucCEf5e2e3d69/gEYjgvMywM5ZEjcEheSRG9VDORiY9bShDH1c8mg==}
 
   '@gsap/react@2.1.2':
     resolution: {integrity: sha512-JqliybO1837UcgH2hVOM4VO+38APk3ECNrsuSM4MuXp+rbf+/2IG2K1YJiqfTcXQHH7XlA0m3ykniFYstfq0Iw==}
@@ -2228,6 +2234,8 @@ snapshots:
   '@formatjs/intl-localematcher@0.6.0':
     dependencies:
       tslib: 2.8.1
+
+  '@gdev-org/gdev_form_validator@1.0.2': {}
 
   '@gsap/react@2.1.2(gsap@3.12.7)(react@19.0.0)':
     dependencies:

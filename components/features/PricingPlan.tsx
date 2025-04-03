@@ -22,7 +22,7 @@ export default function PricingPlan({
 
   return (
     <Card
-      className={cn("w-[85%] min-w-[280px] sm:w-[420px] h-[600px]  flex justify-evenly transition delay-150 duration-300 ease-out  hover:border hover:border-ring hover:shadow-2xl  shadow-accent", className)}
+      className={cn("w-[85%] min-w-[280px] sm:w-[420px] h-[700px]  flex justify-evenly transition delay-150 duration-300 ease-out  hover:border hover:border-ring hover:shadow-2xl  shadow-accent", className)}
     >
 
       <CardHeader className="text-center font-semibold text-2xl border-b border-green-400">
