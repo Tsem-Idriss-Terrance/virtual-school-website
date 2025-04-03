@@ -15,99 +15,102 @@ export default function ContactForm() {
         response_exclude='["pToggle"]'
       >
         <div className="flex gap-2 max-[650px]:flex-wrap  w-full my-2">
-          <div className="gdev-field-wrapper flex-grow-1  flex-shrink-0">
+          <div className="gdev-field-wrapper flex-1/2 flex-grow-1 ">
             <div className="capsule">
-              <label htmlFor="nom" className='pb-2'>Nom ou societe</label>
+              <label htmlFor="nom" className='font-semibold  -my-3'>Nom ou societe</label>
               <input
                 type="text"
                 className=" !border-t-0  !border-l-0 !border-r-0 border-none  text-light mt-4"
                 id="nom"
                 placeholder="Kenfack Nkrumah"
                 name="nom"
-                gdev_props='{"name":"nom","type":"text", "minWord": "2"}'
+                gdev_props='{"name":"nom","type":"text", "minChar": "2"}'
               />
             </div>
-            
+            <span className="gdev-error"/>
           </div>
 
-          <div className="gdev-field-wrapper flex-grow-1  flex-shrink-0">
+          <div className="gdev-field-wrapper flex-1/2 flex-grow-1  ">
             <div className="capsule">
-              <label htmlFor="mail">Adress e-mail</label>
+              <label htmlFor="mail" className='font-semibold -my-3'>Adress e-mail</label>
               <input
                 type="email"
                 className=" !border-t-0  !border-l-0 !border-r-0 border-none focus:outline-0 outline-0  mt-4 "
                 placeholder="Nkrumah@mail.com"
                 id="mail"
                 name="mail"
-                gdev_props='{"name":"mail","type":"password", "securityLevel": "s3"}'
+                gdev_props='{"name":"mail","type":"email", "provider":"any"}'
               />
             </div>
-            
+                      <span className="gdev-error"/>
           </div>
         </div>
 
         <div className="flex gap-2 max-[650px]:flex-wrap flex-1 w-full my-4">
-          <div className="gdev-field-wrapper flex-grow-1">
+          <div className="gdev-field-wrapper flex-1/2 flex-grow-1">
             <div className="capsule">
-              <label htmlFor="tel">Numero de telephone</label>
+              <label htmlFor="tel" className='font-semibold -my-3'>Numero de telephone</label>
               <input
                 type="tel"
                 className=" !border-t-0  !border-l-0 !border-r-0  border-secondary mt-4 text-light"
                 id="tel"
                 placeholder="+23765498xxxx"
                 name="tel"
-                gdev_props='{"name":"tel","type":"text", "minWord": "2"}'
+                gdev_props='{"name":"tel","type":"tel", "country": "any"}'
               />
             </div>
+          <span className="gdev-error"/>
           </div>
 
-          <div className="gdev-field-wrapper flex-grow-1">
+          <div className="gdev-field-wrapper flex-1/2 flex-grow-1">
             <div className="capsule">
-              <label htmlFor="budget">Budget (fcfa)</label>
+              <label htmlFor="budget" className='font-semibold -my-3'>Budget (fcfa)</label>
               <input
                 type="number"
                 className=" !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary mt-4 text-light"
                 placeholder="800000"
                 id="budget"
                 name="budget"
-                gdev_props='{"name":"budget","type":"number", "min": "7"}'
+                gdev_props='{"name":"budget","type":"number", "min":"20000"}'
               />
             </div>
+            <span className="gdev-error"/>
+
           </div>
         </div>
 
         <div className="gdev-field-wrapper w-full my-4">
           <div className="capsule">
-            <label htmlFor="entreprise">Entreprise</label>
+            <label htmlFor="entreprise" className='font-semibold -my-3'>Entreprise</label>
             <input
               type="text"
               placeholder="Societe Nkrumah"
               className=" !border-t-0  !border-l-0 !border-r-0 w-full border-secondary text-light mt-4"
               id="entreprise"
               name="entreprise"
-              gdev_props='{"name":"entreprise","type":"password", "securityLevel": "s3"}'
+              gdev_props='{"name":"entreprise","type":"text", "minChar": "3"}'
             />
           </div>
-          <span className="gdev-error"></span>
+          <span className="gdev-error"/>
         </div>
 
         <div className="gdev-field-wrapper my-4">
           <div className="capsule">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message" className='font-semibold -my-3'>Message</label>
             <textarea
               type="text "
-              placeholder="Bonjour, nous sommes interesser par votre service de creation d'application web.Merci de nous recontacter pour une une discussion plus eloborer a ce sujet "
+              placeholder="Salut, Veuillez nous laisser un message concernant votre preoccupation sur virtual Skull"
               id="message"
-              className="py-4 h-[150px] !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary sb-i text-light mt-4"
+              className="py-4 h-[70px] !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary sb-i text-light mt-4"
               name="message"
-              gdev_props='{"name":"message","type":"password", "securityLevel": "s3"}'
+              gdev_props='{"name":"message","type":"text", "minChar": "5", "minWord":"3"}'
             />
           </div>
-          <span className="gdev-error"></span>
+          <span className="gdev-error"/>
         </div>
 
-        <div className="mt-3 d-flex justify-content-center">
-          <button type="submit" className={cn(buttonVariants(), "bg-green-500 font-medium text-white")}>
+        <div className="mt-3 flex justify-center">
+          <button type="submit" className={cn(buttonVariants(), "bg-green-600 font-medium text-lg text-white hover:bg-blue-500 transition-all delay-300 ease-out origin-left cursor-pointer ")}>
             Envoyer ma demande
           </button>
         </div>
@@ -115,4 +118,3 @@ export default function ContactForm() {
     </div>
   )
 }
-// "btn lift-3 btn-primary px-4 rounded-pill"

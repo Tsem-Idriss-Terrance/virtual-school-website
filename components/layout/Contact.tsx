@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../features/ContactForm";
-import { Headphones } from "lucide-react";
+import { Headphones, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -12,14 +13,14 @@ export default function Contact() {
         <div className=" scroll-m-20 py-4 text-xl font-semibold tracking-tight">
           Nous sommes là pour vous aider.
         </div>
-        <div className="">
-          Contactez l'assistance telephonique <Headphones/>
+        <div className="flex justify-center">
+        <Link href="to:692692482"   className="flex">Contactez l'assistance telephonique de Virtual Skul <Headphones className="ml-3"/></Link>
         </div>
       </div>
 
       <div className="mailusOn">
-        <div className="usbtitle scroll-m-20 py-4 text-xl font-semibold tracking-tight">
-          Par mail
+        <div className="flex scroll-m-20 py-4 text-xl font-semibold tracking-tight">
+          Par mail <Mail className="ml-3"/>
         </div>
         <ContactForm />
       </div>
