@@ -182,3 +182,18 @@
   background-position: 100% 0;
   animation: aura 5s ease-in-out infinite;
 }
+
+@keyframes background-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-background-rotate {
+  animation: background-rotate 5s linear infinite;
+  background-size: 300% 300%; /* Pour que la transition entre les couleurs de fond soit fluide */
+  background-position: 0% 50%;
+}
