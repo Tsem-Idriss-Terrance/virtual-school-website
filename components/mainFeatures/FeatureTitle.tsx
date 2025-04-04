@@ -8,6 +8,6 @@ interface FeatureTitleProps{
 
 export default function FeatureTitle({children, className}: FeatureTitleProps) {
   return (
-    <h3 className={cn("text-2xl font-medium mb-4 md:mb-6 ", className)}>{children}</h3>
+    <h2 className={cn("text-2xl font-medium mb-4 md:mb-6 ", className)}>{children}</h2>
   )
 }

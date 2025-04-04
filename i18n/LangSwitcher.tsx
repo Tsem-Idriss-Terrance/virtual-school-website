@@ -34,7 +34,7 @@ export function LangSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="secondary">
+        <Button variant="secondary" aria-label="Changer la langue">
           <Languages/>
         </Button>
       </DropdownMenuTrigger>

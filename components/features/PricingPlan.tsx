@@ -31,7 +31,7 @@ export default function PricingPlan({
 
       <CardContent>
         <div className="price py-4 text-center">
-          <p className="text-3xl font-bold text-blue-600">{price}</p>
+          <p className="scroll-m-20 text-2xl font-semibold tracking-tight text-blue-600">{price}</p>
         </div>
 
         <div className="feature py-6">

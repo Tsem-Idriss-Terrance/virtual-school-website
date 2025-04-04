@@ -13,6 +13,8 @@ export default function FollowButtons({href, icon, color, Network }: FollowButto
     <div className="">
     <a
     href={href} target="_blank" rel="noopener noreferrer"
+    aria-label={`Suivre sur ${Network}`}
+    role="button"  
     className={cn(
       "flex h-20 w-20 rounded-full  justify-center items-center bg-[#00001A] cursor-pointer relative group"
     )}>
@@ -24,7 +26,7 @@ export default function FollowButtons({href, icon, color, Network }: FollowButto
           {icon}
         </div>
     </a>
-    <p className='text-center pt-3'> <a href={href}>{Network}</a> </p>
+    <p className='text-center pt-3'> <a href={href} aria-label={`Voir le profil sur ${Network}`}>{Network}</a> </p>
     </div>
   )
 }

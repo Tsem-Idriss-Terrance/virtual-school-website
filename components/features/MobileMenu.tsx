@@ -23,7 +23,7 @@ export default function MobileMenu() {
     <div className=" md:hidden ml-1 ">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline">
+          <Button variant="outline" aria-label="Ouvrir le menu">
             <Menu />
           </Button>
         </SheetTrigger>
@@ -34,10 +34,10 @@ export default function MobileMenu() {
           <div className=" px-3 flex flex-col gap-y-3">
                 <MobileNavLinks/>
             <div className="cta flex flex-col gap-2 ">
-                          <Button className="bg-green-700 font-bold py-3 hover:bg-green-500 text-white rounded-2xl">
+                          <Button className="bg-green-700 font-bold py-3 hover:bg-green-500 text-white rounded-2xl" aria-label={t("getStarted")} >
                           {t("getStarted")}
                           </Button>
-                          <Button className="bg-blue-700 font-bold px-3  hover:bg-blue-500 text-white rounded-2xl">
+                          <Button className="bg-blue-700 font-bold px-3  hover:bg-blue-500 text-white rounded-2xl" aria-label={t("signIn")}>
                           {t("signIn")}
                           </Button>
             </div>
