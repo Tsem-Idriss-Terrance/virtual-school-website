@@ -10,8 +10,8 @@ export default function Contact() {
         <h2 className="scroll-m-20 py-5 sm:py-8 text-center border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Contactez-Nous
         </h2>
-        <div className=" scroll-m-20 py-4 text-xl font-semibold tracking-tight">
-          Nous sommes là pour vous aider.
+        <div className="flex scroll-m-20 py-4 text-xl font-semibold tracking-tight">
+          Service Client <Headphones className="ml-3"/>.
         </div>
         <div className="flex justify-center">
         <Link href="to:692692482"   className="flex">Contactez l'assistance telephonique de Virtual Skul <Headphones className="ml-3"/></Link>

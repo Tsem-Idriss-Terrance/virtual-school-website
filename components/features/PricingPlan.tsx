@@ -60,7 +60,7 @@ export default function PricingPlan({
       </CardContent>
 
       <CardFooter>
-        <Button className="bg-blue-500 hover:bg-blue-500/85 w-full font-medium text-xl cursor-pointer">
+        <Button className="bg-blue-500 hover:bg-blue-500/85 w-full font-medium text-xl text-white cursor-pointer">
           Subscribe
         </Button>
       </CardFooter>

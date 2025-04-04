@@ -1,7 +1,8 @@
 import React from 'react'
 import "@gdev-org/gdev_form_validator"
 import { cn } from '@/lib/utils'
-import { buttonVariants } from '../ui/button'
+import { Button, buttonVariants } from '../ui/button'
+import { Car, SendHorizontal } from 'lucide-react'
 
 
 export default function ContactForm() {
@@ -110,11 +111,18 @@ export default function ContactForm() {
         </div>
 
         <div className="mt-3 flex justify-center">
-          <button type="submit" className={cn(buttonVariants(), "bg-green-600 font-medium text-lg text-white hover:bg-blue-500 transition-all delay-300 ease-out origin-left cursor-pointer ")}>
-            Envoyer ma demande
-          </button>
+          <Button type="submit" className= "bg-green-600 hover:bg-green-500/85 font-medium text-lg overflow-hidden text-white cursor-pointer group relative">
+            <span className='absolute inset-0 bg-blue-600 transition-all duration-300 group-hover:w-full w-0 h-full '/>
+            <span className="absolute w-0 left-0 top-1/2 transform -translate-y-1/2  group-hover:w-full group-hover:translate-x-1/2 transition-all duration-300 opacity-0 group-hover:opacity-100"><SendHorizontal /></span>
+            <span>Envoyer ma demande</span>
+          </Button>
         </div>
       </form>
     </div>
   )
 }
+
+{/* <Button className="bg-green-500 hover:bg-green-500/85 text-white relative overflow-hidden group p-3 rounded">
+<span className="absolute inset-0 bg-blue-500 transition-all duration-500 group-hover:w-full w-0 h-full"></span>
+<span className="relative">Envoyer ma demande</span>
+</Button> */}
