@@ -6,12 +6,12 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-const InscriptionFeaturePictures = [
+/*const InscriptionFeaturePictures = [
   "/features/f1.jpeg",
   "/features/f2.jpeg",
   "/features/f3.jpeg",
   "/features/f4.jpeg",
-];
+];*/
 
 export default function Features() {
   return (
