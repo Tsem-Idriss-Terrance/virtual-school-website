@@ -1,5 +1,5 @@
 import React from "react";
-import Feature from "../mainFeatures/Feature";
+//import Feature from "../mainFeatures/Feature";
 import StudentsFeautures from "../mainFeatures/StudentsFeautures";
 import CompaniesFeatures from "../mainFeatures/CompaniesFeatures";
 import { Button } from "../ui/button";

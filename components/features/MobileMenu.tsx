@@ -2,17 +2,13 @@ import { Button } from "@/components/ui/button";
 
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import MobileNavLinks from "./MobileNavLinks";
-import NavLinks from "./NavLinks";
 import ThemeSwitcher from "../theme/ThemeSwitcher";
 import { LangSwitcher } from "@/i18n/LangSwitcher";
 import { useTranslations } from "next-intl";

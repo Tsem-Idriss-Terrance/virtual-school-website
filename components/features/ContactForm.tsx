@@ -1,8 +1,8 @@
 import React from "react";
 import "@gdev-org/gdev_form_validator";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "../ui/button";
-import { Car, SendHorizontal } from "lucide-react";
+//import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
+import { SendHorizontal } from "lucide-react";
 
 export default function ContactForm() {
   return (
@@ -109,7 +109,6 @@ export default function ContactForm() {
               Message
             </label>
             <textarea
-              type="text "
               placeholder="Salut, Veuillez nous laisser un message concernant votre preoccupation sur virtual Skull"
               id="message"
               className="py-4 h-[70px] !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary sb-i text-light mt-4"

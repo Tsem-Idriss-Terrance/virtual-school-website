@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card'
+/*import { Card, CardContent, CardFooter, CardHeader } from '../ui/card'
 import { CheckCheck } from 'lucide-react'
-import { Button } from '../ui/button'
+import { Button } from '../ui/button'*/
 import PricingPlan from '../features/PricingPlan'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
