@@ -7,6 +7,7 @@ import { SendHorizontal } from "lucide-react";
 export default function ContactForm() {
   return (
     <div className="service flex justify-center">
+      {/* @ts-ignore */}
       <form
         id="myForm"
         lang="en"
@@ -126,7 +127,7 @@ export default function ContactForm() {
           >
             <span className="absolute inset-0 bg-blue-600 transition-all duration-300 group-hover:w-full w-0 h-full " />
             <span className="absolute w-0 left-0 top-1/2 transform -translate-y-1/2  group-hover:w-full group-hover:translate-x-1/2 transition-all duration-300 opacity-0 group-hover:opacity-100">
-              <SendHorizontal className="w-8 h-8"/>
+              <SendHorizontal className="w-8 h-8" />
             </span>
             <span>Envoyer ma demande</span>
           </Button>
