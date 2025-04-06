@@ -1,17 +1,17 @@
 import React from "react";
-import Feature from "../mainFeatures/Feature";
+//import Feature from "../mainFeatures/Feature";
 import StudentsFeautures from "../mainFeatures/StudentsFeautures";
 import CompaniesFeatures from "../mainFeatures/CompaniesFeatures";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-const InscriptionFeaturePictures = [
+/*const InscriptionFeaturePictures = [
   "/features/f1.jpeg",
   "/features/f2.jpeg",
   "/features/f3.jpeg",
   "/features/f4.jpeg",
-];
+];*/
 
 export default function Features() {
   return (

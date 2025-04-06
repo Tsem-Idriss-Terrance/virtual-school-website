@@ -10,7 +10,7 @@ import TrustesByCompanies from "@/components/layout/TrustedByCompanies";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
-const t = useTranslations("HomePage")
+//const t = useTranslations("HomePage")
 
   return (
     <div className="mt-24 md:mt-36 min-h-screen">

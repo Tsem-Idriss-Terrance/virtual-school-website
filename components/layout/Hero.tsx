@@ -1,8 +1,8 @@
 
 
-import React, { useRef } from "react";
+import React from "react";
 import { Button } from "../ui/button";
-import { ChevronRight, FileVideo, Play, Tv, Video, Videotape } from "lucide-react";
+import { ChevronRight, Play } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import TrustByStudents from "../features/TrustByStudents";

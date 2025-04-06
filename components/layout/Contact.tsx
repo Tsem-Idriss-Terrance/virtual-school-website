@@ -1,6 +1,6 @@
 import React from "react";
 import ContactForm from "../features/ContactForm";
-import { Car, Facebook, Headphones, Headset, Mail, MessageCirclePlus, Music2, Send } from "lucide-react";
+import {Facebook, Headphones, Headset, Mail, MessageCirclePlus, Music2, Send } from "lucide-react";
 import Link from "next/link";
 import FollowButtons from "../features/cta/FollowButtons";
 

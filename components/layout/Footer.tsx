@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../features/Logo";
-import { useTranslations } from "next-intl";
+//import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { useNavLinks } from "@/data/navLinks";

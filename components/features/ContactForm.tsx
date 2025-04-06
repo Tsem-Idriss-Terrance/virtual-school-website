@@ -1,8 +1,8 @@
 import React from "react";
 import "@gdev-org/gdev_form_validator";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "../ui/button";
-import { Car, SendHorizontal } from "lucide-react";
+//import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
+import { SendHorizontal } from "lucide-react";
 
 export default function ContactForm() {
   return (
@@ -109,7 +109,6 @@ export default function ContactForm() {
               Message
             </label>
             <textarea
-              type="text "
               placeholder="Salut, Veuillez nous laisser un message concernant votre preoccupation sur virtual Skull"
               id="message"
               className="py-4 h-[70px] !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary sb-i text-light mt-4"
@@ -127,7 +126,7 @@ export default function ContactForm() {
           >
             <span className="absolute inset-0 bg-blue-600 transition-all duration-300 group-hover:w-full w-0 h-full " />
             <span className="absolute w-0 left-0 top-1/2 transform -translate-y-1/2  group-hover:w-full group-hover:translate-x-1/2 transition-all duration-300 opacity-0 group-hover:opacity-100">
-              <SendHorizontal className="w-8 h-8"/>
+              <SendHorizontal className="w-8 h-8" />
             </span>
             <span>Envoyer ma demande</span>
           </Button>

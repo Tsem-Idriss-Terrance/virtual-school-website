@@ -2,7 +2,7 @@ import React, { useMemo, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import adobe from "/companies/adobe.png";
+//import adobe from "/companies/adobe.png";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { twJoin } from "tailwind-merge";
@@ -54,7 +54,7 @@ export default function MarqueeCompanies({
   const ELEMENTS = [...companiesLogo, ...companiesLogo, ...companiesLogo]
   const marquee = useRef<HTMLDivElement>(null)
   const timeline = useRef<GSAPTimeline>(null)
-  let timelineTweenScale = useRef<GSAPTween>(null)
+  const timelineTweenScale = useRef<GSAPTween>(null)
 
   gsap.registerPlugin(useGSAP);
   useGSAP(
