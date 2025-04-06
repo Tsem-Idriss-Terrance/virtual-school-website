@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from 'next/head';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import {NextIntlClientProvider} from 'next-intl';
@@ -21,6 +22,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Virtual Skull",
   description: "Plateforme de formation en ligne pour tous les niveaux.",
+  icons: {
+    icon: "/vs_logo.png",
+    shortcut: "/vs_logo.png",
+    apple: "/vs_logo.png", 
+  },
   openGraph: {
     title: "Virtual Skull",
     description: "Plateforme de formation en ligne pour tous les niveaux.",
@@ -53,6 +59,7 @@ export default async function RootLayout({
 
   const locale = await getLocale();
   return (
+
     <html lang={locale} >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
