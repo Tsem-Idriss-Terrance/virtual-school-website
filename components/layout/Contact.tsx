@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="usbtitle scroll-m-20 py-4 text-xl font-semibold tracking-tight">
           Nos Resaux sociaux.
         </div>
-        <div className="flex justify-center gap-3">
+        <div className="flex justify-center gap-3 flex-wrap">
           <FollowButtons Network="TikTok" href="https://www.lienTikTok.com" icon={<Music2 className="font-bold text-[#949499]" size={30}/>} color="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
           <FollowButtons Network="Whats'app" href="https://www.LeLienPourLeCompteGdevSurLeReaseau.com" icon={<MessageCirclePlus className="font-bold text-green-600" size={30}/>} color="bg-gradient-to-r from-green-500 via-purple-500 to-pink-500"/>
           <FollowButtons Network="Telegram" href="https://www.LeLienPourLeCompteGdevSurLeReaseau.com" icon={<Send  className="font-bold text-cyan-600" size={30}/>} color="bg-linear-to-r from-cyan-500 to-blue-500"/>
