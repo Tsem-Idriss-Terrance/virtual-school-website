@@ -7,7 +7,6 @@ import { SendHorizontal } from "lucide-react";
 export default function ContactForm() {
   return (
     <div className="service flex justify-center">
-      {/* @ts-ignore */}
       <form
         id="myForm"
         lang="en"
