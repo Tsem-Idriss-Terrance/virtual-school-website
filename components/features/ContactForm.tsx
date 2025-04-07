@@ -3,8 +3,10 @@ import "@gdev-org/gdev_form_validator";
 //import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { SendHorizontal } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
+  const t = useTranslations("contactForm")
   return (
     <div className="service flex justify-center">
       <form
@@ -18,13 +20,13 @@ export default function ContactForm() {
           <div className="gdev-field-wrapper flex-1/2 flex-grow-1 ">
             <div className="capsule">
               <label htmlFor="nom" className="font-semibold  -my-3">
-                Nom ou societe
+                {t("nomSociete")}
               </label>
               <input
                 type="text"
                 className=" !border-t-0  !border-l-0 !border-r-0 border-none  text-light mt-4"
                 id="nom"
-                placeholder="Kenfack Nkrumah"
+                placeholder={t("placeholderNom")}
                 name="nom"
                 gdev_props='{"name":"nom","type":"text", "minChar": "2"}'
               />
@@ -35,12 +37,12 @@ export default function ContactForm() {
           <div className="gdev-field-wrapper flex-1/2 flex-grow-1  ">
             <div className="capsule">
               <label htmlFor="mail" className="font-semibold -my-3">
-                Adress e-mail
+                {t("mail")}
               </label>
               <input
                 type="email"
                 className=" !border-t-0  !border-l-0 !border-r-0 border-none focus:outline-0 outline-0  mt-4 "
-                placeholder="Nkrumah@mail.com"
+                placeholder={t("placeholderMail")}
                 id="mail"
                 name="mail"
                 gdev_props='{"name":"mail","type":"email", "provider":"any"}'
@@ -54,13 +56,13 @@ export default function ContactForm() {
           <div className="gdev-field-wrapper flex-1/2 flex-grow-1">
             <div className="capsule">
               <label htmlFor="tel" className="font-semibold -my-3">
-                Numero de telephone
+                {t("telephone")}
               </label>
               <input
                 type="tel"
                 className=" !border-t-0  !border-l-0 !border-r-0  border-secondary mt-4 text-light"
                 id="tel"
-                placeholder="+23765498xxxx"
+                placeholder={t("placeholderTel")}
                 name="tel"
                 gdev_props='{"name":"tel","type":"tel", "country": "any"}'
               />
@@ -71,12 +73,12 @@ export default function ContactForm() {
           <div className="gdev-field-wrapper flex-1/2 flex-grow-1">
             <div className="capsule">
               <label htmlFor="budget" className="font-semibold -my-3">
-                Budget (fcfa)
+                {t("budget")}
               </label>
               <input
                 type="number"
                 className=" !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary mt-4 text-light"
-                placeholder="800000"
+                placeholder={t("placeholderBudget")}
                 id="budget"
                 name="budget"
                 gdev_props='{"name":"budget","type":"number", "min":"20000"}'
@@ -89,11 +91,11 @@ export default function ContactForm() {
         <div className="gdev-field-wrapper w-full my-4">
           <div className="capsule">
             <label htmlFor="entreprise" className="font-semibold -my-3">
-              Entreprise
+              {t("entreprise")}
             </label>
             <input
               type="text"
-              placeholder="Societe Nkrumah"
+              placeholder={t("placeholderEntreprise")}
               className=" !border-t-0  !border-l-0 !border-r-0 w-full border-secondary text-light mt-4"
               id="entreprise"
               name="entreprise"
@@ -106,10 +108,10 @@ export default function ContactForm() {
         <div className="gdev-field-wrapper my-4">
           <div className="capsule">
             <label htmlFor="message" className="font-semibold -my-3">
-              Message
+              {t("message")}
             </label>
             <textarea
-              placeholder="Salut, Veuillez nous laisser un message concernant votre preoccupation sur virtual Skull"
+              placeholder={t("placeholderMessage")}
               id="message"
               className="py-4 h-[70px] !border-t-0  !border-l-0 !border-r-0 br-0 border-secondary sb-i text-light mt-4"
               name="message"
@@ -128,7 +130,7 @@ export default function ContactForm() {
             <span className="absolute w-0 left-0 top-1/2 transform -translate-y-1/2  group-hover:w-full group-hover:translate-x-1/2 transition-all duration-300 opacity-0 group-hover:opacity-100">
               <SendHorizontal className="w-8 h-8" />
             </span>
-            <span>Envoyer ma demande</span>
+            <span>{t("envoyer")}</span>
           </Button>
         </div>
       </form>

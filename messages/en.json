@@ -1,27 +1,139 @@
 {
-    "HomePage": {
-      "title": "Hello world!",
-      "test":"try"
-    },
-    "header":{
-      "feature": "Feature",
-      "resources": "Resources",
-      "rate": "Rate",
-      "FAQs": "FAQs",
-      "contact": "Contact",
+  "HomePage": {
+    "title": "Hello world!",
+    "test": "try"
+  },
+  "header": {
+    "feature": "Feature",
+    "resources": "Resources",
+    "rate": "Pricing",
+    "FAQs": "FAQs",
+    "contact": "Contact",
 
-      "getStarted": "Get started",
-      "signIn":"Sign In"
-    },
-    "hero":{
-      "allInOneSolution": "All-in-one solution for easy management of your",
-      "training": "training",
-      "isASolutionDedicatedTo": "is a digital solution dedicated to",
-      "trainingCenter": " training centers",
-      "students": "students",
-      "and": "and",
-      "companies": "companies",
-      "freeTrial": "Free Trial"
-
+    "getStarted": "Get started",
+    "signIn": "Sign In"
+  },
+  "hero": {
+    "allInOneSolution": "All-in-one solution for easy management of your",
+    "training": "training",
+    "isASolutionDedicatedTo": "is a digital solution dedicated to",
+    "trainingCenter": " training centers",
+    "students": "students",
+    "and": "and",
+    "companies": "companies",
+    "freeTrial": "Free Trial",
+    "trustedBy": "Trusted by ",
+    "moreThanStudents": "More than 100+ Students",
+    "moreThan80Organizations": "Over 80 training organizations and companies on our platform"
+  },
+  "pricingPlan":{
+    "feature": "Features",
+    "storage": "Storage",
+    "subscribe": "Subscribe"
+  },
+  "pricing":{
+    "pricing": "Tarifs",
+    "description": "Our prices are applied only for companies using our platform to handle their training.",
+    "plans": {
+      "freemium": {
+        "title": "Freemium",
+        "price": "Free",
+        "features": ["Main Features"],
+        "storage": ["256Mb storage available"]
+      },
+      "medium": {
+        "title": "Medium",
+        "price": "23000 Fcfa/month",
+        "features": [
+          "Freemium Features",
+          "+ Advanced dashboard analysis"
+        ],
+        "storage": [
+          "Freemium Storage (256Mb)",
+          "+ Additional 256Mb storage available"
+        ]
+      },
+      "premium": {
+        "title": "Premium",
+        "price": "35000 Fcfa/month",
+        "features": [
+          "Medium Features",
+          "+ AI assistance",
+          "+ Student platform tracking"
+        ],
+        "storage": [
+          "Medium Storage (512Mb)",
+          "+ Additional 256Mb storage available"
+        ]
+      }
     }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "qr1": {
+      "q1": "What features are included in each plan?",
+      "r1": "Each plan offers a set of features tailored to the users' needs. The Freemium plan provides basic features, while the Medium and Premium plans include advanced features such as dashboard analysis, AI assistance, and student platform tracking.",
+      "q2": "Can I upgrade to a higher plan at any time?",
+      "r2": "Yes, you can upgrade to a higher plan from your dashboard at any time. The upgrade will be applied immediately after payment.",
+      "q3": "What are the prices of the different plans?",
+      "r3": "The Freemium plan is free. The Medium plan costs 23,000 Fcfa per month. The Premium plan costs 35,000 Fcfa per month. You can check all the details on our pricing page.",
+      "q4": "Can I get a free trial for the paid plans?",
+      "r4": "We offer a 7-day free trial for new users of the Medium and Premium plans.",
+      "q5": "What payment methods are accepted?",
+      "r5": "We accept credit/debit cards (Visa, MasterCard), bank transfers, and mobile payments (MTN Money, Orange Money).",
+      "q6": "Can I get an invoice for my subscription?",
+      "r6": "Yes, invoices are automatically generated after each payment and are available in your client area."
+    },
+    "qr2": {
+      "q1": "Can I cancel my subscription at any time?",
+      "r1": "Yes, you can cancel your subscription from your account. Your access will remain active until the end of the current billing period.",
+      "q2": "Can I get a refund after cancellation?",
+      "r2": "Refunds are generally not possible, except in cases of technical issues or incorrect billing.",
+      "q3": "Are my data secure?",
+      "r3": "Yes, we use state-of-the-art security protocols to protect your information. Your data is encrypted and securely stored.",
+      "q4": "What happens if I exceed my storage limit?",
+      "r4": "If you exceed your allocated storage, you will receive a notification to upgrade to a higher plan or purchase additional storage.",
+      "q5": "How can I contact customer support?",
+      "r5": "You can contact us by email, via the live chat on our website, or by submitting a request from your client area.",
+      "q6": "What are the support hours?",
+      "r6": "Our support team is available Monday to Friday, from 9:00 AM to 6:00 PM (GMT)."
+    }
+  },
+  "contactForm": {
+    "nomSociete": "Name or Company",
+    "placeholderNom": "Kenfack Nkrumah",
+    "mail": "Email address",
+    "placeholderMail": "Nkrumah@mail.com",
+    "telephone": "Phone number",
+    "placeholderTel": "+23765498xxxx",
+    "budget": "Budget (fcfa)",
+    "placeholderBudget": "800000",
+    "entreprise": "Company",
+    "placeholderEntreprise": "Company Nkrumah",
+    "message": "Message",
+    "placeholderMessage": "Hello, Please leave us a message regarding your concern on Virtual Skull",
+    "envoyer": "Send my request"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "serviceClient": "Customer Service",
+    "contactTelephone": "Contact Virtual Skul Phone Support",
+    "contactByEmail": "By Email",
+    "socialNetworks": "Our Social Networks",
+    "contactMessage": "Send a message"
+  },
+  "footer": {
+    "logoText": "Made with ❤️ by Gdev.",
+    "newsletterTitle": "Newsletter",
+    "newsletterPlaceholder": "xyz@gmail.com",
+    "newsletterText": "Stay in touch with each update by subscribing to our newsletter.",
+    "legal": {
+      "termsOfUse": "Terms of use",
+      "privacyPolicy": "Privacy policy"
+    },
+    "links": "Links",
+    "legals": "Legals",
+    "submitButton": "Submit",
+    "copy": " 2025~Virtual Skul~All rights Reserved"
   }
+}
