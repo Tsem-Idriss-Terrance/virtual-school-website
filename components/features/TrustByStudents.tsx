@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
@@ -21,11 +22,13 @@ export default function TrustByStudents() {
         }
     ]
 
+    const t = useTranslations("hero")
+
   return (
     <div className='flex items-center gap-3 flex-wrap'>
         <div className="desc text-left font-bold">
-            Trusted by <br />
-            More than 100+ Students
+        {t('trustedBy')} <br />
+        {t('moreThanStudents')}
         </div>
         <div className="avatars flex ">
         {

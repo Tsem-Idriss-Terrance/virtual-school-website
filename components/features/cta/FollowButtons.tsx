@@ -26,7 +26,7 @@ export default function FollowButtons({href, icon, color, Network }: FollowButto
           {icon}
         </div>
     </a>
-    <p className='text-center pt-3'> <a href={href} aria-label={`Voir le profil sur ${Network}`}>{Network}</a> </p>
+    <p className='text-center pt-3 max-w-20 line-clamp-1'> <a href={href} aria-label={`Voir le profil sur ${Network}`}>{Network}</a> </p>
     </div>
   )
 }

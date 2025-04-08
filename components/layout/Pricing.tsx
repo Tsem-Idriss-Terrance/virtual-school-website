@@ -5,6 +5,7 @@ import { Button } from '../ui/button'*/
 import PricingPlan from '../features/PricingPlan'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useTranslations } from 'next-intl'
 
 
 gsap.registerPlugin(useGSAP)
@@ -54,6 +55,8 @@ export default function Pricing() {
         { scope: $follower, revertOnUpdate: true }
     );
 
+    const t = useTranslations("pricing")
+
     return (
         <section ref={$section} className="mx-auto p-8 md:my-32 my-20 relative" id='pricing'>
             <div
@@ -64,49 +67,53 @@ export default function Pricing() {
             </div>
 
             <div className="title text-center mb-8">
-                <h3 className="text-4xl font-bold">Pricing</h3>
+                <h3 className="text-4xl font-bold">{t("pricing")}</h3>
                 <p className="text-lg text-gray-600">
-                    Our prices are applied only for companies using our platform to handle their training.
+                    {t("description")}
                 </p>
             </div>
 
             <div className="cards flex justify-evenly max-[520px]:justify-center  flex-wrap gap-5 mx-auto">
-                <PricingPlan
-                    title="Freemium"
-                    price="Free"
-                    features={["Main Features"]}
-                    storage={["256Mb storage available"]}
-                    className='card'
-                />
+            <PricingPlan
+          title={"Freemium"}
+          price={t('plans.freemium.price')}
+          features={[
+            t('plans.freemium.features.0'),
+          ]}
+          storage={[
+            t('plans.freemium.storage.0'),
+          ]}
+          className='card'
+        />
 
-                <PricingPlan
-                    title="Medium"
-                    price="23000Fcfa/month"
-                    features={[
-                        "Freemium Features",
-                        "+ Advanced dashboard analysis",
-                    ]}
-                    storage={[
-                        "Freemium Storage (256Mb)",
-                        "+ Additional 256Mb storage available",
-                    ]}
-                    className='card'
-                />
+        <PricingPlan
+          title={"Medium"}
+          price={t('plans.medium.price')}
+          features={[
+            t('plans.medium.features.0'),
+            t('plans.medium.features.1')
+          ]}
+          storage={[
+            t('plans.medium.storage.0'),
+            t('plans.medium.storage.1')
+          ]}
+          className='card'
+        />
 
-                <PricingPlan
-                    title="Premium"
-                    price="35000Fcfa/month"
-                    features={[
-                        "Medium Features",
-                        "+ AI assistance",
-                        "+ Student platform tracking",
-                    ]}
-                    storage={[
-                        "Medium Storage (512Mb)",
-                        "+ Additional 256Mb storage available",
-                    ]}
-                    className='card'
-                />
+        <PricingPlan
+          title={"Premium"}
+          price={t('plans.premium.price')}
+          features={[
+            t('plans.premium.features.0'),
+            t('plans.premium.features.1'),
+            t('plans.premium.features.2')
+          ]}
+          storage={[
+            t('plans.premium.storage.0'),
+            t('plans.premium.storage.1')
+          ]}
+          className='card'
+        />
             </div>
         </section>
     )
